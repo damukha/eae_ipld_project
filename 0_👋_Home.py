@@ -15,12 +15,12 @@ with st.sidebar:
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
     st.write("***Final Project - Dec 2023***")
-    st.write("**Author:** <Your Name>")
+    st.write("**Author:** [Denis Mukha](https://www.linkedin.com/in/denismukha/)")
     st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
 # ----- Top title -----
-st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is ????</h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
+st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Denis Mukha""", unsafe_allow_html=True)  # TODO: Add your name
 
 
 # ----- Profile image file -----
@@ -39,29 +39,28 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "Senior IT Business Analyst"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
 st.write("##")    # Adding some space
-
 
 # ----- About me section -----
 st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 I am a Senior IT Business Analyst with over 4 years of work experience in Business and Data Analytics.
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ Executed the roles of Project Manager, Data Analyst, Product Owner and IT Business Analyst in public sector, retail and banking domains.
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️ Tennis and Coding
 
-- 🤖 <Your Personal Projects>
+- 🤖 CRM and WMS systems customization, PowerBI and Streamlit dashboards, Web-applications architecture, BPMN and UML diagrams
 
-- 🏂 <Your Hobbies>
+- 🏂 Tennis, Football, Travelling, Making videos, Coding, Podcasts, Stand-up
 
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: denis.mukha.it@gmail.com and https://www.linkedin.com/in/denismukha/
 
 - 🏠 Barcelona
 """)
