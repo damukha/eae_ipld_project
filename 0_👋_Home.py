@@ -39,7 +39,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Senior IT Business Analyst"   # TODO: Change this
+current_role = "Senior IT Business Analyst at A&D Mortgage LLC"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
