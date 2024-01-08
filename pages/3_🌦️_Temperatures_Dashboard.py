@@ -91,18 +91,18 @@ if min_date is not None and max_date is not None:
 
     cols1[2].write("#")
 
-    min_temp_text = f"""\
-    ### ☃️ Min Temperature: {min_temp:.1f}°C
-    *{min_temp_city} on {min_temp_date}*
-    """
+    min_temp_text = (
+        "### ☃️ Min Temperature: {:.1f}°C\n".format(min_temp) +
+        "*{} on {}*".format(min_temp_city, min_temp_date)
+    )
     cols1[2].write(min_temp_text)
 
     cols1[2].write("#")
 
-    max_temp_text = f"""\
-    ### 🏜️ Max Temperature: {max_temp:.1f}°C
-    *{max_temp_city} on {max_temp_date}*
-    """
+    max_temp_text = (
+        "### 🏜️ Max Temperature: {:.1f}°C\n".format(max_temp) +
+        "*{} on {}*".format(max_temp_city, max_temp_date)
+    )
     cols1[2].write(max_temp_text)
 
 else:
