@@ -60,20 +60,22 @@ temps_df["AvgTemperatureCelsius"] = temps_df["AvgTemperatureCelsius"].round(1)
 
 unique_cities_list = temps_df["City"].unique()
 
-# TODO: Ex 3.4: Which are the minimum and maximum dates?
-min_date = min(temps_df["Date"])  
-max_date = max(temps_df["Date"])
+min_date = temps_df["Date"].min()
+max_date = temps_df["Date"].max()
 
 # TODO:  Ex 3.5: What are the global minimum and maximum temperatures? Find the city and the date of each of them.
-min_temp = temps_df[temps_df["AvgTemperatureCelsius"] == min(temps_df["AvgTemperatureCelsius"])]
 
-max_temp = temps_df[temps_df["AvgTemperatureCelsius"] == max(temps_df["AvgTemperatureCelsius"])]
+min_temp_index = temps_df["AvgTemperatureCelsius"].idxmin()
+max_temp_index = temps_df["AvgTemperatureCelsius"].idxmax()
 
-min_temp_city = min_temp.iloc[0]['City']
-min_temp_date = min_temp.iloc[0]['Date']
+min_temp = temps_df.loc[min_temp_index, "AvgTemperatureCelsius"]
+max_temp = temps_df.loc[max_temp_index, "AvgTemperatureCelsius"]
 
-max_temp_city = max_temp.iloc[0]['City']
-max_temp_date = max_temp.iloc[0]['Date']
+min_temp_city = temps_df.loc[min_temp_index, "City"]
+min_temp_date = temps_df.loc[min_temp_index, "Date"]
+
+max_temp_city = temps_df.loc[max_temp_index, "City"]
+max_temp_date = temps_df.loc[max_temp_index, "Date"]
 
 
 # ----- Displaying the extracted information metrics -----
